@@ -1,2 +1,2 @@
-# secordnodejs
+# secondnodejs
 second course
