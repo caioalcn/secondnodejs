@@ -11,7 +11,7 @@ module.exports = function(app) {
         pay.date = new Date;
 
         var connection = app.persist.dbconnection();
-        var paymentDAO = app.persist.paymentDAO(connection);
+        var paymentDAO = new app.persist.paymentDAO(connection);
 
         paymentDAO.save(pay, function(err, result){
             console.log(err);
